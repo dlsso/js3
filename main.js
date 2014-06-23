@@ -2,6 +2,7 @@ var phoneNumber = prompt("Please enter your phone number in the form xxx-xxx-xxx
 var birthDate = prompt("Please enter your birthday in the form dd/mm/yy.")
 var zip = prompt("Please enter your zip code.")
 var state = prompt("Please enter your state abbreviation.")
+var married = prompt("Are you married? Yes or no.")
 
 if(phoneNumber.charAt(3) === '-' && phoneNumber.charAt(7) === '-') {
 	var pValid = "valid."
@@ -31,7 +32,15 @@ else{
 	var stateValid = "not valid."
 }
 
+if(married.toLowerCase === "yes" || "no"){
+	var mValid = "valid."
+}
+else{
+	var mValid = "not valid."
+}
+
 alert("Phone number is " + pValid + "\n"
 	+ "Birthday is " + pValid + "\n"
 	+ "Zip code is " + zipValid + "\n"
-	+ "State is " + stateValid + "\n");
+	+ "State is " + stateValid + "\n"
+	+ "Married or not is " + mValid + "\n");
