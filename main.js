@@ -1,0 +1,1 @@
+var number = prompt("Please enter your phone number with dashes.\nWe will never spam you or sell your phone numer.")
